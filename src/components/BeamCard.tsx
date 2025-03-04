@@ -1,4 +1,3 @@
-
 import { MapPin } from 'lucide-react';
 
 interface BeamCardProps {
@@ -20,6 +19,7 @@ const BeamCard = ({ username, prompt, radius, avatar, time, delay = 0 }: BeamCar
         animation: `slide-up 0.5s ease-out ${delay}ms forwards` 
       }}
     >
+      
       <div className="flex items-start gap-3">
         <div className="relative flex-shrink-0">
           <img 
@@ -39,11 +39,11 @@ const BeamCard = ({ username, prompt, radius, avatar, time, delay = 0 }: BeamCar
           <p className="text-sm mb-2 line-clamp-2">{prompt}</p>
           
           <div className="flex items-center text-xs text-muted-foreground">
-            <div className="relative flex items-center justify-center">
+            <div className="relative flex items-center">
               <MapPin size={14} className="text-primary" />
-              <span className="radius-ping w-8 h-8 absolute -left-2 -top-2"></span>
+              <span className="radius-ping absolute -left-2 -top-2 w-8 h-8"></span>
             </div>
-            <span className="ml-2">Within {radius}m radius</span>
+            <span className="ml-1">Within {radius}m radius</span>
           </div>
         </div>
       </div>
