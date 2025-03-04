@@ -5,7 +5,7 @@ import AppTransition from './AppTransition';
 
 const Hero = () => {
   return (
-    <section className="relative pt-24 pb-20 overflow-hidden">
+    <section className="relative min-h-screen py-20 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50/50 -z-10"></div>
       
@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="absolute bottom-20 right-10 w-72 h-72 bg-indigo-400/10 rounded-full blur-3xl -z-5"></div>
       
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-8rem)]">
           <div className="max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
             <div className="inline-block px-3 py-1 mb-6 rounded-full bg-primary/10 text-primary text-sm font-medium animate-fade-in">
               Connect with people nearby, instantly
@@ -41,8 +41,8 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="flex justify-center lg:justify-end animate-fade-in" style={{ animationDelay: '800ms' }}>
-            <div className="relative animate-float">
+          <div className="flex justify-center items-center animate-fade-in" style={{ animationDelay: '800ms' }}>
+            <div className="relative animate-float max-w-[280px] mx-auto">
               <AppTransition />
               
               {/* Highlight circles */}

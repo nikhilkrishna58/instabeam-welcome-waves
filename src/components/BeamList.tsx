@@ -41,13 +41,13 @@ const beams = [
 
 const BeamList = () => {
   return (
-    <div className="py-4">
-      <div className="mb-6">
-        <h2 className="font-semibold text-xl mb-1">Nearby Beams</h2>
+    <div className="py-4 px-3 h-full">
+      <div className="mb-4">
+        <h2 className="font-semibold text-lg mb-1">Nearby Beams</h2>
         <p className="text-sm text-muted-foreground">Connect with people around you</p>
       </div>
       
-      <div>
+      <div className="space-y-3 overflow-y-auto pb-20">
         {beams.map((beam, index) => (
           <BeamCard 
             key={index} 
