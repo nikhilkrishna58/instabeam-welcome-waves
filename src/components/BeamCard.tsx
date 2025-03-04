@@ -39,11 +39,11 @@ const BeamCard = ({ username, prompt, radius, avatar, time, delay = 0 }: BeamCar
           <p className="text-sm mb-2 line-clamp-2">{prompt}</p>
           
           <div className="flex items-center text-xs text-muted-foreground">
-            <div className="relative">
-              <MapPin size={14} className="mr-1 text-primary" />
-              <span className="radius-ping w-8 h-8 -left-3 -top-3"></span>
+            <div className="relative flex items-center justify-center">
+              <MapPin size={14} className="text-primary" />
+              <span className="radius-ping w-8 h-8 absolute -left-2 -top-2"></span>
             </div>
-            <span>Within {radius}m radius</span>
+            <span className="ml-2">Within {radius}m radius</span>
           </div>
         </div>
       </div>
